@@ -1,19 +1,27 @@
 
 
-var cards = ["My Girl", "My Girl", "My Man", "My Man"]
+var cards = ["My Girl", "My Girl", "My Man", "My Man"];
 var cardsInPlay = [];
-var cardOne = cards[0];
-var cardTwo = cards[2];
 
+var checkForMatch = function (){
+  if (cardsInPlay[0] === cardsInPlay[1]) {
+console.log("YEA!!! You did it!");
+} else {
+console.log("Seriously?!? Try again.");
+}
+};
 
-cardsInPlay.push("cardOne");
-cardsInPlay;
-{console.log("You just flipped My Girl!");}
+var flipCard = function (cardId){
+console.log("You just flipped "+ cards[cardId]);
+cardsInPlay.push(cards[cardId]);
+checkForMatch();
+};
 
-cardsInPlay.push("cardTwo");
-cardsInPlay;
-{console.log("You just flipped My Man!");}
+flipCard(0);
+flipCard(2);
 
-if (cardOne === cardTwo)
-{alert ("You did it, yeay!")}
-else {alert ("Seriously?!? Try again.")}
+if (cardsInPlay.length === 2 && cardsInPlay[0] === cardsInPlay[1]) {
+alert ("Yea baby, you did it!");
+} else {
+alert ("Seriously?!? Try again.");
+}
