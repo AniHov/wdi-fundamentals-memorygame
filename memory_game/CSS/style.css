@@ -51,6 +51,18 @@ clear: both;
 height: 0;
 font-size: 0;
 }
+button {
+  cursor: pointer;
+  background-color: #00D0CB;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 10px;
+  margin: 20px;
+  border-radius: 4px;
+  border: none;
+}
 footer {
 	text-transform: uppercase;
 	padding: 20px 0;
